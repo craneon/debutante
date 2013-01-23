@@ -1,10 +1,44 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<style type="text/css">
+		a, h1, h2       { color: #B784A7; }
+		h1       { margin-bottom: 30px; padding-bottom:20px; text-align:center;}
+		h1              { border-bottom: 2px solid #eee; }
+		h2              { font-size: 1.2em; }
+		
+		.page           { margin: 2em auto; width: 45em; border: 5px solid #ccc;
+		                  padding: 1.4em; background: white; }
+		                  
+		select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+				padding:12px 6px;
+		}
+	</style>
+</head>
 <body>
- <form action="submit" method="POST">
-   What's your name? <input name="name" type="text" />
-   </br>
-   How old would you like to be? <input name="age" type="text" />
-   <input type="submit" />
- </form>
+	<div class="page">
+	<h1>Do you want to be a debutante?</h1>
+	
+	<form class="form-horizontal" action="submit" method="POST">
+	  <div class="control-group">
+	    <label class="control-label" for="inputName">What's your name?</label>
+	    <div class="controls">
+	      <input name="name" type="text" id="inputName" placeholder="Miss Debutante">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="inputAge">Age</label>
+	    <div class="controls">
+	      <input name="age" type="text" id="inputAge" placeholder="23">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <div class="controls">
+	      <button type="submit" class="btn">Deliver my pedigree!</button>
+	    </div>
+	  </div>
+</form>
+
+ </div>
 </body>
 </html>

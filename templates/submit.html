@@ -1,10 +1,24 @@
 <html>
   <head>
     <title>{{name}} - Debutante Bio</title>
-  </head>
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<style type="text/css">
+		a, h1	       { color: #B784A7; }
+		h2				{ color: #915F6D; }
+		h1          { margin-bottom: 30px; padding-bottom:20px; }
+		h1              { border-bottom: 2px solid #eee; }
+		h2              { font-size: 1.2em; }
+		
+		.page           { margin: 2em auto; width: 45em; border: 5px solid #ccc;
+		                  padding: 1.4em; background: white; }
+	</style>
+</head>
+
   <body>
+  	  <div class="page">
       <h1>Hello, {{name}}!</h1>
       <h2>Here's your bio:</h2>
       <p>{{bio}}</p>
+      </div>
   </body>
 </html>
