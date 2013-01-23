@@ -11,11 +11,13 @@ def hello():
     
 @app.route("/submit", methods=['POST'])
 def submit():
-	name = request.form["name"]
+	name1 = request.form["name1"]
+	name2 = request.form["name2"]
 	age = request.form["age"]
 	return render_template("submit.html",
-		name = name,
-		bio = biogenerate(name, age))
+		name1 = name1,
+		name2 = name2,
+		bio = biogenerate(name1, name2, age))
 
 
 if __name__ == "__main__":

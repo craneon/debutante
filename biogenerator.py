@@ -1,18 +1,19 @@
 from random import choice
 
-def biogenerate( name, age):
+def biogenerate( name1, name2, age ):
 
-	birthrank = ['youngest', 'first-born', 'eldest', 'middle', 'sole']
-	parent1 = ['Lord Sherry']
-	parent2 = ['Lady Bourbon']
-	hobby = ['running with horses']
-	placetype = ['her family estate', 'her summer cottage']
-	location = ['Northumberland', 'West Yorkshire', 'East Riding of Yorkshire', 'Merseyside', 'Shropshire', 'East Devon', 'Somerset', 'Isle of Wight', 'East Sussex', 'Cumbria', 'Lancashire', 'South Oxfordshire', 'Essex', 'Maidenhead', 'East Hertfordshire', 'Surrey Heath', 'Winchester']
-	school = ['Wimbledon College of Art Theatre', 'South-East Essex Technical College', 'Stoke-on-Trent College of Art', 'East Anglican School of Painting and Drawing', 'Birmingham Guild of Handicraft', 'Lower Dorchester Municipal College of Fashion Technology', 'Bournemouth Municipal College of Art', 'London South Bank University', 'University of West London', 'University of Greenwich', ]
-	degree = ['Horticulture', 'Hospitality and Tourism', 'Dance/Movement Therapy' ]
-	business = ['interior design']
-	grabbag = ['swimming with turtles']
+	birthrank = ['youngest', 'first-born', 'eldest', 'middle', 'sole', 'only remaining', 'elder', 'noble', 'well-bred']
+	parent1 = ['Lord Sherry', 'the Duke of Windsor', 'the Duke of Cornwall', 'the Duke of St. Albans', 'the Duke of Rothesay', 'the Marquess of Granby', 'the Earl of Arundel', 'the Earl of Burlington', 'the Marquess of Douro', 'the Marquess of Stafford', 'the Earl Percy', 'the Baron Seymour', 'the Viscount Mandeville']
+	parent2 = ['Lady Bourbon', 'the Countess of Wessex', 'the Duchess of Westminster', 'the Duchess of Gloucester', 'the Duchess of Kent', 'the Hon. Lady Worsley', 'Lady Blanchett', 'Lady Menzel', 'the Hon. Lady Worthington', 'the Hon. Lady Twinings', 'the Hon. Lady Blair']
+	activity = ['running with horses', 'exhibiting her collection of giant tortoises', 'on the hunt', 'on a Boxing Day hunt', 'lounging', 'drinking tea', 'basking in the sun', 'with her gun collection', 'with her hunting dogs', 'feeling at home', 'wearing one of her own designs', 'after a great chase', 'sunning', 'in riding gear', 'in evening gear', 'with her parents', 'draped in her embroidery', 'seated at the window', 'seated in the parlour', 'playing the harpsichord']
+	placetype = ['her family estate', 'her summer cottage', 'her summering home', 'her horse stable', 'the estate of her parents', 'the estate of her fiance', 'her newest hotel', 'her riding land', 'her main residence', 'her future inheritance']
+	location = ['Northumberland', 'West Yorkshire', 'East Riding of Yorkshire', 'Merseyside', 'Shropshire', 'East Devon', 'Somerset', 'the Isle of Wight', 'East Sussex', 'Cumbria', 'Lancashire', 'South Oxfordshire', 'Essex', 'Maidenhead', 'East Hertfordshire', 'Surrey Heath', 'Winchester', 'West Cambridge']
+	school = ['Wimbledon College of Art Theatre', 'South-East Essex Technical College', 'Stoke-on-Trent College of Art', 'East Anglican School of Painting and Drawing', 'Birmingham Guild of Handicraft', 'Lower Dorchester Municipal College of Fashion Technology', 'Bournemouth Municipal College of Art', 'London South Bank University', 'University of West London', 'University of Greenwich']
+	degree = ['Horticulture', 'Hospitality and Tourism', 'Dance/Movement Therapy', 'General Handicrafts', 'Legal Nurse Consultation', 'Youth Ministry', 'Music Therapy', 'Mortuary Science', 'Golf Club Management', 'Makeup Effects and Design', 'Illustration and Fantasy Art', 'Toy Design', 'Southwest Studies', 'Wedding Planning', 'Peace Studies', 'Sports Ministry', 'Philanthropic Studies', 'Gun-Smithing', 'Ski Resort Management', 'Peace Studies', 'Spanish-Colonial Furniture Making', 'Family Studies', 'Popular Television', 'Folklore', 'Seamanship', 'Hawaiian Studies', 'Entertainment Engineering & Design']
+	business = ['interior design', 'design', 'social networking web', 'graphic design', 'illustration', 'social consulting', 'tea blending', 'imported wine', 'orchard financing', 'event planning', 'cupcake', 'nobleman online dating', 'estate renting', 'real estate', 'prep school admissions', 'online cafe start-up', 'online']
+	hobby = ['lawn tennis', 'a good game of croquet', 'interior decorating', 'draping herself in cloth', 'watching matches at Wimbledon', 'horse racing', 'dog breeding', 'cupcake baking', 'fox hunting', 'birding', 'training her hawks', 'going to the firing range', 'pony riding', 'planning colonial-themed parties', 'traveling to Mauritius', 'visiting the British colonies', 'summering in Scotland', 'watching rugby games', 'planning weddings', 'playing netball', 'swinging polo sticks', 'playing the French horn', 'playing the clavicle']
+	grabbag = ['swimming with turtles', 'competitive dog grooming', 'flower arranging', 'milk bottle collecting', 'soap carving', 'navel fluff collecting', 'extreme ironing', 'polishing rare stones', 'sketching the cast of Monty Python', 'collecting teas from across the world', 'writing class-appropriate romance novels', 'writing love poetry', 'tending the cricket field', 'crocheting large vegetables', 'embroidering horses on silk handkerchiefs', 'designing silk scarves for Hermes', 'maintaining an aura of aristocratic splendour', 'cake decorating', 'collecting embalmed invertibrates', 'taxidermy', 'skinning rabbits']
 
-	return name + ', ' + age + ', the ' + choice(birthrank) + ' daughter of ' + choice(parent1) + ' and ' + choice(parent2) + ', is depicted ' + choice(hobby) + ' near her ' + choice(placetype) + ' in ' + choice(location) + '. ' + name + ' is finishing her degree in ' + choice(degree) + ' at the ' + choice(school) + '. She enjoys ' + choice(hobby) + ' when she is not busy running her ' + choice(business) + ' business, and in her spare time she has a pechant for ' + choice(grabbag) + '.'
+	return name1 + ' ' + name2 + ', ' + age + ', the ' + choice(birthrank) + ' daughter of ' + choice(parent1) + ' and ' + choice(parent2) + ', is depicted ' + choice(activity) + ' at ' + choice(placetype) + ' in ' + choice(location) + '. Miss' + ' ' + name2 + ' is finishing her degree in ' + choice(degree) + ' at the ' + choice(school) + '. She enjoys ' + choice(hobby) + ' when she is not busy with her ' + choice(business) + ' business, and in her spare time she has a penchant for ' + choice(grabbag) + '.'
 
  
